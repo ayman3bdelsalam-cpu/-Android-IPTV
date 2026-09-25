@@ -1,0 +1,37 @@
+Ayman Smart IPTV Android — v1.1.0
+
+PLAYER / FULLSCREEN
+- Auto landscape when any media starts
+- True immersive fullscreen; status/navigation bars are hidden
+- Player controls and custom Back button auto-hide together after 3 seconds
+- FIT / FILL / ZOOM video scaling, with the last mode remembered
+- Screen stays awake while the player is open
+- Audio-track selector and subtitle selector (including subtitle disable option)
+- Native Android Picture-in-Picture when Home/Recents is pressed
+
+LIVE TV PERFORMANCE
+- Automatic HLS -> MPEG-TS fallback for Xtream live channels
+- Faster low-latency live buffer profile for quicker channel zapping
+- Smart reconnect with 1s -> 2s -> 4s backoff
+- Automatic playback recovery after Wi-Fi/mobile network interruption
+- Small AUTO HLS/TS status indicator while controls are visible
+
+APP PERFORMANCE
+- 5-minute in-memory cache for categories, stream lists and series details
+- Cancels stale list requests when a new category is selected
+- 250ms debounced search for very large IPTV libraries
+- Coil image requests decode near card size to reduce RAM usage and scrolling jank
+- Resume position now saves every 45s only while actually playing, plus final save on exit/background
+
+SECURITY / DATA
+- Xtream host, username and password are encrypted with AES-GCM using Android Keystore
+- Legacy plaintext credentials remain readable and migrate after successful login
+- Logout removes credentials without deleting account-scoped favorites/resume history
+- Android backup is disabled so encrypted IPTV credentials are not copied to device backups
+
+BRANDING
+- Android launcher and in-app branding match the LG webOS identity:
+  blue #0284C7 rounded A mark, AYMAN in white, SMART IPTV in #38BDF8
+
+Version code: 4
+Version name: 1.1.0
